@@ -4,11 +4,14 @@ require_relative '../lib/turn.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-move(board, 4, "X")
-move(board, 0, "O")
-move(board, 1, "X")
+
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
+times = 9
+
+until times == 0
 turn(board)
 display_board(board)
+times -= 1
+end
