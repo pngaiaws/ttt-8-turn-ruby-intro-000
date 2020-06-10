@@ -19,4 +19,3 @@ def position_taken? (board, index)
     true
   else false
   end
-end
