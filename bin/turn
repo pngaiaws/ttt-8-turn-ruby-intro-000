@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require '/Users/pngai/.atom/.learn-ide/home/beta-response-1358/ttt-8-turn-ruby-intro-000/lib/turn.rb'
+require_relative '../lib/turn.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
