@@ -56,8 +56,8 @@ end
 def turn(board)
   player = "X"
   index = input_to_index.ask_player_choice()
-  if valid_move? (board, index)
-    move(board, index, player )
+  if valid = valid_move?(board, index)
+    move(board, index, player)
   else
     turn(board)
   end
