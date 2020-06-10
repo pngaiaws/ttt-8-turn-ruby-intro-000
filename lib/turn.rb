@@ -38,7 +38,7 @@ end
 
 
 def ask_player_choice()
-    puts "Where would you like to go?"
+    puts "Please enter 1-9:"
     input = gets.strip.to_i
 end
 
@@ -54,5 +54,10 @@ def move(board, index, player = "X")
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
-end
+  player = "X"
+  index = input_to_index.ask_player_choice()
+  if valid_move? (board, index)
+    move(board, index, player )
+  else
+    turn(board)
+  end
